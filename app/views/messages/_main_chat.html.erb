@@ -1,8 +1,60 @@
 <div class="chat-header">
+  <div class="left-heder">
+    <div class="heder-title">
+      room1
+    </div>
+  </div>
+  <div class="left-heder">
+    <div class="header-button">
+      <a href="#" >チャットを終了する</a>
+    </div>
+  </div>
 </div>
 
 <div class="messages">
+  <div class="message">
+    <div class="upper-message">
+      <div class="message-user">
+        fuchimo
+      </div>
+      <div class="message-date">
+        2020-1-1(wed) 12:00:00
+      </div>
+    </div>
+    <div class="lower-message">
+      <div class="message-content">
+        こんにちは
+      </div>
+    </div>
+  </div>
+
+  <div class="message">
+    <div class="upper-message">
+      <div class="message-user">
+        atyamo
+      </div>
+      <div class="message-date">
+        2020-2-1(wed) 12:00:00
+      </div>
+    </div>
+    <div class="lower-message">
+      <div class="message-content">
+        おはよう
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="form">
+  <div class="form-input">
+    <input placeholder="type a message" class="form-message">
+    <%# label要素の中にinput要素を入れると、関連づけをしてくれる。
+    type="file"をdisplay: none;で非表示にした場合、本来ならクリックすることが
+    できなくなるが、label要素で関連づけをすることで、クリックが可能となる。 %>
+    <label class="form-image">
+      <span class="image-file">画像</span>
+      <input type="file" class="hidden">
+    </label>
+  </div>
+  <input type="submit" value="送信" class="form-submit">
 </div>
