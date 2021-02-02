@@ -12,12 +12,40 @@
   height: 100px;
   background-color: #253141;
   padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heder-name a{
+  color: #FAFAFA;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.create-room a{
+  padding: 14px;
+  border: 1px solid lightblue;
+  color: deepskyblue;
+  font-size: 10px;
+  text-decoration: none;
 }
 
 .rooms{
   height: calc(100vh - 100px);
   background-color: #2F3E51;
   padding: 0 20px;
+  /* スクロールができるようになるプロパティ */
+  overflow: scroll;
+}
+
+.room{
+  padding: 20px 0 40px;
+}
+
+.room-name a{
+  color: white;
+  text-decoration: none;
 }
 
 .chat{
