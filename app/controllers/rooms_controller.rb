@@ -12,6 +12,9 @@ class RoomsController < ApplicationController
       render :new
     end
 
+    def index
+    end
+
   end
 
   private
